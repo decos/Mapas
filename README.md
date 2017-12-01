@@ -26,3 +26,49 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Iniciando el proyecto de mapas
+
+	Recursos:
+		- https://angular-maps.com/
+		- https://angular-maps.com/guides/getting-started/
+		- https://getbootstrap.com/docs/4.0/getting-started/introduction/
+
+1. Crear el proyecto
+	- ng new mapas
+	- Modificar el nombre del directorio (deseable)
+
+2. Copiar el directorio `assets` y el archivo `styles.css` del proyecto `PeliculasApp` a nuestro nuevo proyecto
+
+3. Añadir los scripts y hoja de estilo de Bootstrap en archivo `index` del proyecto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
