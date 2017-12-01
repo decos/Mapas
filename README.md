@@ -43,6 +43,41 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 3. Añadir los scripts y hoja de estilo de Bootstrap en archivo `index` del proyecto
 
 
+## Instalando angular2-google-maps y creando un API KEY de GoogleMaps
+
+	Recursos:
+		- https://angular-maps.com/guides/getting-started/
+		- https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
+		- https://console.developers.google.com/apis/credentials?project=mapas-1512162284246&authuser=0
+
+1. Crear el componente `navbar`
+	- ng g c components/navbar -is
+
+2. Modificar la clase de la etiqueta `nav`
+	- navbar navbar-inverse bg-inverse bg-faded
+
+3. Instalar Angular Google Maps
+	- npm install @agm/core --save
+
+4. A través del primer recurso, hacer clic en el siguiente enlace:
+	- Get an API key `here`.
+	- Este enlace abrira el segundo recurso
+
+5. A través del segundo recurso, realizar las siguientes acciones:
+	- Hacer clic en el botón `Get a Key`
+	- Ingresar el nombre del nuevo proyecto
+	- Hacer clic en el boton `Create and Enable API`
+	- Después de generarse el código, hacer clic en el enlace `API Console`
+	- Este enlace abrira el tercer recurso
+
+6. A través del tercer recurso, realizar las siguientes acciones:
+	- Modificar el nombre, en mi caso puse `Angular2 Google Maps`
+	- Seleccionar la opción `URLs de referencia HTTP (sitios web)` del radiobutton `Restriccion de clave`
+	- Ingresar la URL `http://localhost:4200` para que acepte solicitudes de referencia HTTP
+
+7. En el modulo de la aplicación realizar los siguientes pasos:
+	- Importar el modulo `AgmCoreModule`
+	- Añadir la API key creada en el punto anterior dentro de `imports`
 
 
 
