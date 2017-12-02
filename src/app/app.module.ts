@@ -7,6 +7,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 //Import Angular Google Maps
 import { AgmCoreModule } from '@agm/core';
 
+//Import Services
+import {MapasService} from './services/mapas.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,7 @@ import { AgmCoreModule } from '@agm/core';
       apiKey: 'AIzaSyCiHW_mMSJGbTIlDuZNl8j4LdmZ4y9TuDw'
     })
   ],
-  providers: [],
+  providers: [MapasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

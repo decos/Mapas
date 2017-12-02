@@ -1,9 +1,39 @@
 <app-navbar></app-navbar>
 
-<h1>{{ title }}</h1>
+<div class="container main-container">
 
-<!-- this creates a google map on the page with the given lat/lng from -->
-<!-- the component as the initial center of the map: -->
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+  <div class="row">
+
+    <div class="col-md-4">
+      <h5>Marcador</h5>
+    </div>
+
+    <div class="col-md-8">
+
+      <!-- this creates a google map on the page with the given lat/lng from -->
+      <!-- the component as the initial center of the map: -->
+      <agm-map
+              [latitude]="lat"
+              [longitude]="lng"
+              [zoom]="zoom">
+
+              <agm-marker
+                          [latitude]="lat"
+                          [longitude]="lng">
+
+                          <agm-info-window>
+                                            <strong>Titulo</strong>
+                                            <p>
+                                              Esta es la Plaza 2 de Mayo
+                                            </p>
+                          </agm-info-window>
+
+              </agm-marker>
+
+      </agm-map>
+
+    </div>
+
+  </div>
+
+</div>

@@ -42,7 +42,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 3. Añadir los scripts y hoja de estilo de Bootstrap en archivo `index` del proyecto
 
-
 ## Instalando angular2-google-maps y creando un API KEY de GoogleMaps
 
 	Recursos:
@@ -91,13 +90,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 	- Añadir la variable `zoom` al componente `app`
 	- Añadir la propiedad `zoom` al contenedor `agm-map`
 
+## Agregando marcadores con descripciones
 
+	Recursos:
+		- https://angular-maps.com/api-docs/agm-core/components/AgmInfoWindow.html
 
+1. Añadir el selector `agm-info-window` a la vista del componente `app`
 
+2. Codea la vista del componente `app` para dividirla en dos partes:
+	- Marcador
+	- Mapa
 
+3. Crear el directorio `services`
 
+4. Crear el servicio `mapas`
+	- ng g s services/mapas
 
-
+5. Importar el servicio en el modulo principal y añadirlo en `providers`
 
 
 
