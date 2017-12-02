@@ -49,6 +49,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 		- https://angular-maps.com/guides/getting-started/
 		- https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en#key
 		- https://console.developers.google.com/apis/credentials?project=mapas-1512162284246&authuser=0
+		- https://angular-maps.com/api-docs/agm-core/components/AgmMap.html
 
 1. Crear el componente `navbar`
 	- ng g c components/navbar -is
@@ -79,8 +80,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 	- Importar el modulo `AgmCoreModule`
 	- Añadir la API key creada en el punto anterior dentro de `imports`
 
+8. Codear la clase `AppComponent`
 
+9. Añadir lo siguiente en el archivo `styles.css`
+	agm-map {
+	  height: 600px;
+	}
 
+10. A través del cuarto recurso, realizar las siguientes acciones:
+	- Añadir la variable `zoom` al componente `app`
+	- Añadir la propiedad `zoom` al contenedor `agm-map`
 
 
 
