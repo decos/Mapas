@@ -146,8 +146,25 @@ markerDraggable: Si es verdadero permite mover el marcador
 	- Codear la funcion `clickMapa`
 	- Consumir el servcio creado en el punto anterior
 
+## Arrastrar marcadores, actualización y almacenamiento en el local storage
 
+~~~
+Hacer que los pines o marcadores se mantengan a pesar que se haga un REFRESH
+~~~
 
+1. En el servicio, crear las funciones `guardarMarcadores` y `cargarMarcadores`
+
+2. Añadir la funcion `guardarMarcadores` en la funcion `insertarMarcador`
+
+3. Consumir la funcion `cargarMarcadores` en el constructor del componente principal
+
+4. Añadir el metodo `markerClick` al elemento HTML `agm-marker`
+
+5. Añadir el metodo `dragEnd` al elemento HTML `agm-marker`
+
+6. Crear los metodos añadidos en el punto 4 y 5, en el componente principal
+
+7. Codear la funcion `dragEnd`
 
 
 
