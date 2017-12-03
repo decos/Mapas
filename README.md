@@ -108,8 +108,43 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 5. Importar el servicio en el modulo principal y añadirlo en `providers`
 
+## Eventos en el Mapa - Crear marcadores, arrastrarlos y obtener coordenadas
 
+	Recursos:
+		- https://angular-maps.com/api-docs/agm-core/components/AgmMap.html#mapClick
+		- https://angular-maps.com/api-docs/agm-core/directives/AgmMarker.html#title
+		- https://angular-maps.com/api-docs/agm-core/directives/AgmMarker.html#markerDraggable
 
+~~~
+Al hacer clic que aparezca un marcador
+~~~
+
+1. Usando el primer recurso, realizar las siguientes acciones:
+	- Añadir el metodo `mapClick` al elemento HTML `agm-map`
+	- Crear el metodo `clickMapa` en el componente principal
+
+2. Crear el directorio `interfaces` dentro de `src`
+	- Crear el archivo `marcador.interface.ts`
+	- Codear la interface creada
+
+3. Importar la interfaz dentro del servicio `mapas`
+	- Usar la interfaz dentro del constructor
+	- Crear un marcador y añadirlo al arreglo `marcadores`
+
+4. Importa el servicio `mapas` en el componente principal
+	- Inyectar el servicio en el constructor
+	
+5. En la vista, usar la directiva `ngFor` en el elemento `agm-marker`
+
+~~~
+markerDraggable: Si es verdadero permite mover el marcador
+~~~
+
+6. Crear el servicio `insertarMarcador`
+
+7. Importar la interfaz dentro del componente principal	
+	- Codear la funcion `clickMapa`
+	- Consumir el servcio creado en el punto anterior
 
 
 

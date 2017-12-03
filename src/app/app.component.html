@@ -15,16 +15,19 @@
       <agm-map
               [latitude]="lat"
               [longitude]="lng"
-              [zoom]="zoom">
+              [zoom]="zoom"
+              (mapClick)="clickMapa( $event )">
 
-              <agm-marker
-                          [latitude]="lat"
-                          [longitude]="lng">
+              <agm-marker *ngFor="let marcador of _ms.marcadores"
+                          [latitude]="marcador.lat"
+                          [longitude]="marcador.lng"
+                          [title]="marcador.titulo"
+                          [markerDraggable]="marcador.draggable">
 
                           <agm-info-window>
-                                            <strong>Titulo</strong>
-                                            <p>
-                                              Esta es la Plaza 2 de Mayo
+                                            <strong>{{ marcador.titulo }}</strong>
+                                            <p *ngIf="marcador.desc">
+                                              {{ marcador.desc }}
                                             </p>
                           </agm-info-window>
 
