@@ -188,6 +188,16 @@ Hacer que los pines o marcadores se mantengan a pesar que se haga un REFRESH
 
 8. Modificar la función `clickMarcador` para que modifique la variable `draggable` al hacer clic en el marcador
 
+## Detalles Esteticos de la aplicacion de mapas
+
+~~~
+Si elimino un marcador, el formulario al lado izquierdo se mantiene
+~~~
+
+1. Añadir el siguiente codigo en la vista para quitar la referencia del lado izquierdo
+	- marcadorSel=null;
+
+2. Añadir una alerta para que aparezca cuando no se haya creado o seleccionado un marcador
 
 
 
