@@ -166,6 +166,28 @@ Hacer que los pines o marcadores se mantengan a pesar que se haga un REFRESH
 
 7. Codear la funcion `dragEnd`
 
+## Editar contenido del marcador y eliminarlo
+
+1. Modificar la vista del componente principal:
+	- Añadir un formulario con una entrada de texto (titulo) y un area de texto (descripcion)
+
+2. Importar la clase `FormsModule` al modulo principal y añadirlo a `imports`
+	- import { FormsModule } from '@angular/forms';
+
+3. Añadir la variable `marcadorSel` al componente principal
+
+4. Modificar la vista del componente principal:
+	- Añadir un elemento HTML de tipo `select`
+
+5. Añadir la funcion `borrarMarcador` en los servicios
+
+6. Añadir la variable `draggable` al componente principal
+	- Codear el evento `change` del elemento HTML de tipo `select` para que envie `0` o `1`
+
+7. Codear la funcion `cambiarDraggable` en el componente principal
+
+8. Modificar la función `clickMarcador` para que modifique la variable `draggable` al hacer clic en el marcador
+
 
 
 

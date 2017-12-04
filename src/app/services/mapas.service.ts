@@ -29,6 +29,12 @@ export class MapasService {
     localStorage.setItem('marcadores', JSON.stringify(this.marcadores));
   }
 
+  borrarMarcador(idx:number){
+    //eliminar 1 marcador de la posicion "idx"
+    this.marcadores.splice(idx, 1);
+    this.guardarMarcadores();
+  }
+
   cargarMarcadores(){
     if( localStorage.getItem('marcadores') ){
       this.marcadores = JSON.parse( localStorage.getItem('marcadores') );

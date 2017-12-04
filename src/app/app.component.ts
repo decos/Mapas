@@ -16,6 +16,9 @@ export class AppComponent {
   lng: number = -77.042754;
   zoom: number = 16;
 
+  marcadorSel:any = null;
+  draggable:string = "1";
+
   constructor( public _ms:MapasService ){
     this._ms.cargarMarcadores();
   }
@@ -33,7 +36,22 @@ export class AppComponent {
   }
 
   clickMarcador(marcador:Marcador, i:number){
-    console.log(marcador, i);
+    console.log("clickMarcador: ", marcador, i);
+    this.marcadorSel = marcador;
+    if(this.marcadorSel.draggable){
+      this.draggable = "1";
+    }else{
+      this.draggable = "0";
+    }
+  }
+
+  cambiarDraggable(){
+    console.log(this.draggable);
+    if(this.draggable == "1"){
+      this.marcadorSel.draggable = true;
+    }else{
+      this.marcadorSel.draggable = false;
+    }
   }
 
   dragEndMarcador(marcador:Marcador, evento){
